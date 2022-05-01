@@ -15,11 +15,11 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 3.0.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/rubocop-semver/rubocop-ruby3_0/tree/v#{spec.version}"
-  spec.metadata["changelog_uri"] = "https://github.com/rubocop-semver/rubocop-ruby3_0/blob/v#{spec.version}/CHANGELOG.md"
-  spec.metadata["bug_tracker_uri"] = "https://github.com/rubocop-semver/rubocop-ruby3_0/issues"
+  spec.metadata["source_code_uri"] = "#{spec.homepage}/tree/v#{spec.version}"
+  spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/v#{spec.version}/CHANGELOG.md"
+  spec.metadata["bug_tracker_uri"] = "#{spec.homepage}/issues"
   spec.metadata["documentation_uri"] = "https://www.rubydoc.info/gems/rubocop-ruby3_0/#{spec.version}"
-  spec.metadata["wiki_uri"] = "https://github.com/rubocop-semver/rubocop-ruby3_0/wiki"
+  spec.metadata["wiki_uri"] = "#{spec.homepage}/wiki"
   spec.metadata["rubygems_mfa_required"] = "true"
 
   # Specify which files should be added to the gem when it is released.

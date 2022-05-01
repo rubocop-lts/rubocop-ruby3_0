@@ -40,7 +40,7 @@ a [SemVer compliant](https://semver.org/) (Semantic Versioning) way that aligns 
 compatible/supported Ruby version.
 
 Adding this gem will facilitate the best practice of adding a `~> ` version constrained `rubocop` dependency, while
-minimiszing the risk of a rubocop minor / patch upgrade breaking the build. See the
+minimizing the risk of a rubocop minor / patch upgrade breaking the build. See the
 official [compatibility matrix](https://github.com/rubocop/rubocop/blob/master/docs/modules/ROOT/pages/compatibility.adoc#support-matrix) (Rubocop documentation)
 
 ## Stable

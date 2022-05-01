@@ -1,22 +1,22 @@
 <p align="center">
     <a href="https://rubocop.org#gh-light-mode-only"  target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_1/raw/main/docs/images/logo/rubocop-light.svg?raw=true" alt="PNG Rubocop Logo, Copyright (c) 2014 Bozhidar Batsov, MIT License, SVG Rubocop Logo, Gil Barbara, CC0">
+      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/rubocop-light.svg?raw=true" alt="PNG Rubocop Logo, Copyright (c) 2014 Bozhidar Batsov, MIT License, SVG Rubocop Logo, Gil Barbara, CC0">
     </a>
     <a href="https://rubocop.org#gh-dark-mode-only"  target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_1/raw/main/docs/images/logo/rubocop-dark.svg?raw=true" alt="SVG Rubocop Logo, Copyright (c) 2014 Bozhidar Batsov, MIT License, SVG Rubocop Logo, Roberto Huertas, MIT">
+      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/rubocop-dark.svg?raw=true" alt="SVG Rubocop Logo, Copyright (c) 2014 Bozhidar Batsov, MIT License, SVG Rubocop Logo, Roberto Huertas, MIT">
     </a>
     <a href="https://www.ruby-lang.org/" target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_1/raw/main/docs/images/logo/ruby-logo.svg?raw=true" alt="Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5">
+      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/ruby-logo.svg?raw=true" alt="Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5">
     </a>
     <a href="https://semver.org/#gh-light-mode-only" target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_1/raw/main/docs/images/logo/semver-light.svg?raw=true" alt="SemVer.org Logo by @maxhaz">
+      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/semver-light.svg?raw=true" alt="SemVer.org Logo by @maxhaz">
     </a>
     <a href="https://semver.org/#gh-dark-mode-only" target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_1/raw/main/docs/images/logo/semver-dark.svg?raw=true" alt="SemVer.org Logo by @maxhaz">
+      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/semver-dark.svg?raw=true" alt="SemVer.org Logo by @maxhaz">
     </a>
 </p>
 
-# Rubocop::Ruby31
+# Rubocop::Ruby30
 
 See the intro [blog post](https://dev.to/pboling/rubocop-ruby-matrix-gems-nj)!
 
@@ -31,7 +31,7 @@ what brought you here.
 
 <p align="left">
     <a href="https://metaredux.com/posts/2022/04/21/rubocop-turns-10.html" target="_blank" rel="noopener">
-      <img width="360px" src="https://github.com/rubocop-semver/rubocop-ruby3_1/raw/main/docs/images/rubocop-not-semver.png?raw=true" alt="Explanation of non-SemVer compliance, @bbatsov">
+      <img width="360px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/rubocop-not-semver.png?raw=true" alt="Explanation of non-SemVer compliance, @bbatsov">
     </a>
 </p>
 
@@ -52,11 +52,11 @@ All releases of this gem are stable releases. The first version is `1.0.0`.
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add rubocop-ruby3_1 -r false
+    $ bundle add rubocop-ruby3_0 -r false
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install rubocop-ruby3_1
+    $ gem install rubocop-ruby3_0
 
 ## Usage
 
@@ -66,7 +66,7 @@ Add to the top of your project's RuboCop configuration file:
 
 ```yaml
 inherit_gem:
-  rubocop-ruby3_1: rubocop.yml
+  rubocop-ruby3_0: rubocop.yml
 ```
 
 This has the same effect as you declaring the following in your `.rubocop.yml`:
@@ -74,7 +74,7 @@ This has the same effect as you declaring the following in your `.rubocop.yml`:
 ```yaml
 AllCops:
   # remove if already present in your `.rubocop.yml` to gain the full benefit of this gem!
-  TargetRubyVersion: 3.1
+  TargetRubyVersion: 3.0
   NewCops: enable
 ```
 
@@ -102,7 +102,7 @@ See [CONTRIBUTING.md][contributing]
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=rubocop-semver/rubocop-ruby3_1)]("https://github.com/rubocop-semver/rubocop-ruby3_1/graphs/contributors")
+[![Contributors](https://contrib.rocks/image?repo=rubocop-semver/rubocop-ruby3_0)]("https://github.com/rubocop-semver/rubocop-ruby3_0/graphs/contributors")
 
 Made with [contributors-img](https://contrib.rocks).
 
@@ -118,7 +118,7 @@ See [LICENSE][license] for the official [Copyright Notice][copyright-notice-expl
 
 ## Code of Conduct
 
-Everyone interacting in the Rubocop::Ruby31 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rubocop-semver/rubocop-ruby3_1/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Rubocop::Ruby30 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md).
 
 ## Versioning
 
@@ -133,20 +133,20 @@ the [Pessimistic Version Constraint][pvc] with two digits of precision.
 For example:
 
 ```ruby
-spec.add_dependency "rubocop-ruby3_1", "~> 0.1"
+spec.add_dependency "rubocop-ruby3_0", "~> 0.1"
 ```
 
 [copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
 
-[gh_discussions]: https://github.com/rubocop-semver/rubocop-ruby3_1/discussions
+[gh_discussions]: https://github.com/rubocop-semver/rubocop-ruby3_0/discussions
 
-[conduct]: https://github.com/rubocop-semver/rubocop-ruby3_1/blob/main/CODE_OF_CONDUCT.md
+[conduct]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md
 
-[contributing]: https://github.com/rubocop-semver/rubocop-ruby3_1/blob/main/CONTRIBUTING.md
+[contributing]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/CONTRIBUTING.md
 
-[security]: https://github.com/rubocop-semver/rubocop-ruby3_1/blob/main/SECURITY.md
+[security]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/SECURITY.md
 
-[license]: https://github.com/rubocop-semver/rubocop-ruby3_1/blob/main/LICENSE.txt
+[license]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/LICENSE.txt
 
 [license-ref]: https://opensource.org/licenses/MIT
 
@@ -170,27 +170,27 @@ spec.add_dependency "rubocop-ruby3_1", "~> 0.1"
 
 [politicme]: https://nationalprogressiveparty.org
 
-[documentation]: https://rubydoc.info/github/rubocop-semver/rubocop-ruby3_1/main
+[documentation]: https://rubydoc.info/github/rubocop-semver/rubocop-ruby3_0/main
 
-[source]: https://github.com/rubocop-semver/rubocop-ruby3_1/
+[source]: https://github.com/rubocop-semver/rubocop-ruby3_0/
 
-[actions]: https://github.com/rubocop-semver/rubocop-ruby3_1/actions
+[actions]: https://github.com/rubocop-semver/rubocop-ruby3_0/actions
 
-[issues]: https://github.com/rubocop-semver/rubocop-ruby3_1/issues
+[issues]: https://github.com/rubocop-semver/rubocop-ruby3_0/issues
 
-[climate_maintainability]: https://codeclimate.com/github/rubocop-semver/rubocop-ruby3_1/maintainability
+[climate_maintainability]: https://codeclimate.com/github/rubocop-semver/rubocop-ruby3_0/maintainability
 
-[climate_coverage]: https://codeclimate.com/github/rubocop-semver/rubocop-ruby3_1/test_coverage
+[climate_coverage]: https://codeclimate.com/github/rubocop-semver/rubocop-ruby3_0/test_coverage
 
-[codecov_coverage]: https://codecov.io/gh/rubocop-semver/rubocop-ruby3_1
+[codecov_coverage]: https://codecov.io/gh/rubocop-semver/rubocop-ruby3_0
 
-[code_triage]: https://www.codetriage.com/rubocop-semver/rubocop-ruby3_1
+[code_triage]: https://www.codetriage.com/rubocop-semver/rubocop-ruby3_0
 
-[blogpage]: http://www.railsbling.com/tags/rubocop-ruby3_1/
+[blogpage]: http://www.railsbling.com/tags/rubocop-ruby3_0/
 
-[rubygems]: https://rubygems.org/gems/rubocop-ruby3_1
+[rubygems]: https://rubygems.org/gems/rubocop-ruby3_0
 
-[chat]: https://gitter.im/rubocop-semver/rubocop-ruby3_1?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[chat]: https://gitter.im/rubocop-semver/rubocop-ruby3_0?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
 [maintenancee_policy]: https://guides.rubyonrails.org/maintenance_policy.html#security-issues
 

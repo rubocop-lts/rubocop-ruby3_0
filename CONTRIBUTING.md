@@ -1,6 +1,6 @@
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at [https://github.com/rubocop-semver/rubocop-ruby3_1][source]
+Bug reports and pull requests are welcome on GitHub at [https://github.com/rubocop-semver/rubocop-ruby3_0][source]
 . This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to
 the [code of conduct][conduct].
 
@@ -8,18 +8,18 @@ To submit a patch, please fork the project and create a patch with tests. Once y
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=rubocop-semver/rubocop-ruby3_1)][contributors]
+[![Contributors](https://contrib.rocks/image?repo=rubocop-semver/rubocop-ruby3_0)][contributors]
 
 Made with [contributors-img][contrib-rocks].
 
 [comment]: <> (Following links are used by README, CONTRIBUTING)
 
-[conduct]: https://github.com/rubocop-semver/rubocop-ruby3_1/blob/main/CODE_OF_CONDUCT.md
+[conduct]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md
 
 [contrib-rocks]: https://contrib.rocks
 
-[contributors]: https://github.com/rubocop-semver/rubocop-ruby3_1/graphs/contributors
+[contributors]: https://github.com/rubocop-semver/rubocop-ruby3_0/graphs/contributors
 
 [comment]: <> (Following links are used by README, CONTRIBUTING, Homepage)
 
-[source]: https://github.com/rubocop-semver/rubocop-ruby3_1/
+[source]: https://github.com/rubocop-semver/rubocop-ruby3_0/

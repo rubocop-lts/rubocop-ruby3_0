@@ -26,7 +26,7 @@ end
 require "simplecov" if RUN_COVERAGE
 
 # This gem
-require "rubocop/ruby3_1"
+require "rubocop/ruby3_0"
 
 # RSpec Configs
 require "config/rspec/rspec_core"

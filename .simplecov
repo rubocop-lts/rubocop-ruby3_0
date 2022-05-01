@@ -21,7 +21,7 @@ if RUN_COVERAGE
     primary_coverage :branch
     add_filter "spec"
     # Why exclude version.rb? See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-410105995
-    add_filter "lib/rubocop/ruby3_1/version.rb"
+    add_filter "lib/rubocop/ruby3_0/version.rb"
     track_files "**/*.rb"
 
     if ALL_FORMATTERS

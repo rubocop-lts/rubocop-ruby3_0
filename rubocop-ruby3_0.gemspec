@@ -23,8 +23,8 @@ Gem::Specification.new do |spec|
   spec.metadata["rubygems_mfa_required"] = "true"
 
   # Specify which files should be added to the gem when it is released.
-  spec.files = Dir["lib/**/*.rb", "CHANGELOG.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "LICENSE.txt", "README.md",
-                   "SECURITY.md"]
+  spec.files = Dir["lib/**/*.rb", "sig/**/*.rbs", "CHANGELOG.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md",
+                   "LICENSE.txt", "README.md", "rubocop.yml", "SECURITY.md"]
   spec.test_files = Dir["spec/**/*"]
   spec.bindir = "exe"
   spec.executables = []

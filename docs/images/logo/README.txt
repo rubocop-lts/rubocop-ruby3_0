@@ -1,3 +1,11 @@
+rubocop-semver Organization Logo
+
+Author: Yusuf Evli <https://unsplash.com/@yusufevli>
+Source: Unsplash <https://unsplash.com/photos/yaSLNLtKRIU>
+License: Unsplash License <https://unsplash.com/license>
+
+---
+
 Tools Used
 
 SVG Sources:

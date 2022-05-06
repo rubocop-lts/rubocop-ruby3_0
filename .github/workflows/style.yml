@@ -15,7 +15,7 @@ on:
 
 jobs:
   rubocop:
-    name: Rubocop
+    name: RuboCop
     if: "!contains(github.event.commits[0].message, '[ci skip]') && !contains(github.event.commits[0].message, '[skip ci]')"
     strategy:
       fail-fast: false
@@ -38,5 +38,5 @@ jobs:
           rubygems: ${{ matrix.rubygems }}
           bundler: ${{ matrix.bundler }}
           bundler-cache: true
-      - name: Run Rubocop
+      - name: Run RuboCop
         run: bundle exec rubocop -DESP

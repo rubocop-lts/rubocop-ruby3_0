@@ -1,4 +1,4 @@
-name: Official Support
+name: Ruby HEAD Support
 
 on:
   push:
@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
   test:
-    name: Specs - Ruby ${{ matrix.ruby }} ${{matrix.gemfile}} ${{ matrix.name_extra || '' }}
+    name: Ruby ${{ matrix.ruby }} ${{matrix.gemfile}} ${{ matrix.name_extra || '' }}
     env: # $BUNDLE_GEMFILE must be set at the job level, so it is set for all steps
       BUNDLE_GEMFILE: ${{ github.workspace }}/gemfiles/${{ matrix.gemfile }}.gemfile
     if: "!contains(github.event.commits[0].message, '[ci skip]') && !contains(github.event.commits[0].message, '[skip ci]')"
@@ -32,14 +32,15 @@ jobs:
       matrix:
         experimental: [false]
         gemfile:
-          - ruby
-          - rails
+          - vanilla
+          - rails7
         rubygems:
           - latest
         bundler:
           - latest
         ruby:
-          - "2.7"
+          - "ruby-head"
+          - "jruby-head"
 
     runs-on: ubuntu-latest
     continue-on-error: ${{ matrix.experimental || endsWith(matrix.ruby, 'head') }}
@@ -53,5 +54,7 @@ jobs:
           rubygems: ${{ matrix.rubygems }}
           bundler: ${{ matrix.bundler }}
           bundler-cache: true
+      - name: Run RuboCop
+        run: bundle exec rubocop -DES
       - name: Run tests
         run: bundle exec rake test

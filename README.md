@@ -39,9 +39,45 @@ The purpose of this gem is to constrain the `rubocop` dependency of a project in
 a [SemVer compliant](https://semver.org/) (Semantic Versioning) way that aligns with the the desired minimum
 compatible/supported Ruby version.
 
+## Ruby Version Support Matrix
+
 Adding this gem will facilitate the best practice of adding a `~> ` version constrained `rubocop` dependency, while
 minimizing the risk of a rubocop minor / patch upgrade breaking the build. See the
-official [compatibility matrix](https://github.com/rubocop/rubocop/blob/master/docs/modules/ROOT/pages/compatibility.adoc#support-matrix) (Rubocop documentation)
+official [compatibility matrix][rubocop-matrix] for `rubocop`.
+
+`rubocop-ruby3_0` (this gem) will install on any version of Ruby >= 3.0, and can be used to analyze code intended to support Ruby >= 3.0.
+
+* 🧊 - Install on Ruby `<version>`
+* 🏃‍ - Execute on Ruby `<version>`
+* 🛠 - Lint code with Ruby `<version>` syntax target
+
+| gem                     | 1.8.7         | 1.9.3     | 2.0       | 2.1       | 2.2       | 2.3       | 2.4       | 2.5       | 2.6       | 2.7       | 3.0       | 3.1       |
+|-------------------------|---------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| [rubocop-ruby1_9][rr19] | [🛠][what1_8] | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    |
+| [rubocop-ruby2_0][rr20] |               |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    |
+| [rubocop-ruby2_1][rr21] |               |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    |
+| [rubocop-ruby2_2][rr22] |               |           |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    |
+| [rubocop-ruby2_3][rr23] |               |           |           |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    |
+| [rubocop-ruby2_4][rr24] |               |           |           |           |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    |
+| [rubocop-ruby2_5][rr25] |               |           |           |           |           |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    |
+| [rubocop-ruby2_6][rr26] |               |           |           |           |           |           |           | 🛠        | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    |
+| [rubocop-ruby2_7][rr27] |               |           |           |           |           |           |           | 🛠        | 🛠        | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    |
+| [rubocop-ruby3_0][rr30] |               |           |           |           |           |           |           | 🛠        | 🛠        | 🛠        | 🧊 🏃‍ 🛠 | 🧊 🏃‍    |
+| [rubocop-ruby3_1][rr31] |               |           |           |           |           |           |           | 🛠        | 🛠        | 🛠        | 🛠        | 🧊 🏃‍ 🛠 |
+
+[rr19]: https://github.com/rubocop-semver/rubocop-ruby1_9
+[rr20]: https://github.com/rubocop-semver/rubocop-ruby2_0
+[rr21]: https://github.com/rubocop-semver/rubocop-ruby2_1
+[rr22]: https://github.com/rubocop-semver/rubocop-ruby2_2
+[rr23]: https://github.com/rubocop-semver/rubocop-ruby2_3
+[rr24]: https://github.com/rubocop-semver/rubocop-ruby2_4
+[rr25]: https://github.com/rubocop-semver/rubocop-ruby2_5
+[rr26]: https://github.com/rubocop-semver/rubocop-ruby2_6
+[rr27]: https://github.com/rubocop-semver/rubocop-ruby2_7
+[rr30]: https://github.com/rubocop-semver/rubocop-ruby3_0
+[rr31]: https://github.com/rubocop-semver/rubocop-ruby3_1
+[what1_8]: https://github.com/rubocop-semver/rubocop-ruby1_9#what-about-ruby-18
+[rubocop-matrix]: https://github.com/rubocop/rubocop/blob/master/docs/modules/ROOT/pages/compatibility.adoc#support-matrix
 
 ## Stable
 

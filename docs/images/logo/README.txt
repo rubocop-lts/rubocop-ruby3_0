@@ -18,23 +18,21 @@ Base64 Converter: <https://codebeautify.org/svg-to-base64-converter>
 
 The Rubocop Logo (Light) - rubocop-light.svg
 
-Original PNG Source: rubocop/rubocop <https://github.com/rubocop/rubocop/blob/master/logo/rubo-logo-symbol.png?raw=true>
-Original PNG Author: Copyright (c) 2014 Bozhidar Batsov
-Original PNG License: MIT <https://github.com/rubocop/rubocop/blob/master/LICENSE.txt>
+Original PNG Source: rubocop/rubocop <https://docs.rubocop.org/rubocop/1.27/about/logo.html>
+Original PNG Author: Copyright (c) 2014 <Dimiter Petrov> <https://www.chadomoto.com/>
+Original PNG License: Creative Commons Attribution-NonCommercial 4.0 International License <http://creativecommons.org/licenses/by-nc/4.0/deed.en_GB>
 SVG Source: gilbarbara/logos <https://github.com/gilbarbara/logos>
 SVG Author: Gil Barbara <https://github.com/gilbarbara>
-SVG License: CC0 <https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt>
 
 ---
 
 The Rubocop Logo (Dark) - rubocop-dark.svg
 
-Original PNG Source: rubocop/rubocop <https://github.com/rubocop/rubocop/blob/master/logo/rubo-logo-symbol.png?raw=true>
-Original PNG Author: Copyright (c) 2014 Bozhidar Batsov
-Original PNG License: MIT <https://github.com/rubocop/rubocop/blob/master/LICENSE.txt>
+Original PNG Source: rubocop/rubocop <https://docs.rubocop.org/rubocop/1.27/about/logo.html>
+Original PNG Author: Copyright (c) 2014 <Dimiter Petrov> <https://www.chadomoto.com/>
+Original PNG License: Creative Commons Attribution-NonCommercial 4.0 International License <http://creativecommons.org/licenses/by-nc/4.0/deed.en_GB>
 SVG Source: vscode-icons/vscode-icons <https://github.com/vscode-icons/vscode-icons>
 SVG Author: Roberto Huertas <https://github.com/vscode-icons/vscode-icons>
-SVG License: MIT <https://github.com/vscode-icons/vscode-icons/blob/master/LICENSE>
 
 ---
 

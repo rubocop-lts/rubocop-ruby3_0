@@ -1,18 +1,18 @@
 <p align="center">
     <a href="https://rubocop.org#gh-light-mode-only"  target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/rubocop-light.svg?raw=true" alt="PNG RuboCop Logo, Copyright (c) 2014 Bozhidar Batsov, MIT License, SVG RuboCop Logo, Gil Barbara, CC0">
+      <img width="120px" src="https://github.com/rubocop-lts/rubocop-ruby3_0/raw/main/docs/images/logo/rubocop-light.svg?raw=true" alt="PNG RuboCop Logo, Copyright (c) 2014 Bozhidar Batsov, MIT License, SVG RuboCop Logo, Gil Barbara, CC0">
     </a>
     <a href="https://rubocop.org#gh-dark-mode-only"  target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/rubocop-dark.svg?raw=true" alt="SVG RuboCop Logo, Copyright (c) 2014 Bozhidar Batsov, MIT License, SVG RuboCop Logo, Roberto Huertas, MIT">
+      <img width="120px" src="https://github.com/rubocop-lts/rubocop-ruby3_0/raw/main/docs/images/logo/rubocop-dark.svg?raw=true" alt="SVG RuboCop Logo, Copyright (c) 2014 Bozhidar Batsov, MIT License, SVG RuboCop Logo, Roberto Huertas, MIT">
     </a>
     <a href="https://www.ruby-lang.org/" target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/ruby-logo.svg?raw=true" alt="Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5">
+      <img width="120px" src="https://github.com/rubocop-lts/rubocop-ruby3_0/raw/main/docs/images/logo/ruby-logo.svg?raw=true" alt="Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5">
     </a>
     <a href="https://semver.org/#gh-light-mode-only" target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/semver-light.svg?raw=true" alt="SemVer.org Logo by @maxhaz">
+      <img width="120px" src="https://github.com/rubocop-lts/rubocop-ruby3_0/raw/main/docs/images/logo/semver-light.svg?raw=true" alt="SemVer.org Logo by @maxhaz">
     </a>
     <a href="https://semver.org/#gh-dark-mode-only" target="_blank" rel="noopener">
-      <img width="120px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/logo/semver-dark.svg?raw=true" alt="SemVer.org Logo by @maxhaz">
+      <img width="120px" src="https://github.com/rubocop-lts/rubocop-ruby3_0/raw/main/docs/images/logo/semver-dark.svg?raw=true" alt="SemVer.org Logo by @maxhaz">
     </a>
 </p>
 
@@ -31,7 +31,7 @@ what brought you here.
 
 <p align="left">
     <a href="https://metaredux.com/posts/2022/04/21/rubocop-turns-10.html" target="_blank" rel="noopener">
-      <img width="360px" src="https://github.com/rubocop-semver/rubocop-ruby3_0/raw/main/docs/images/rubocop-not-semver.png?raw=true" alt="Explanation of non-SemVer compliance, @bbatsov">
+      <img width="360px" src="https://github.com/rubocop-lts/rubocop-ruby3_0/raw/main/docs/images/rubocop-not-semver.png?raw=true" alt="Explanation of non-SemVer compliance, @bbatsov">
     </a>
 </p>
 
@@ -66,18 +66,18 @@ official [compatibility matrix][rubocop-matrix] for `rubocop`.
 | [rubocop-ruby3_0][rr30] |               |           |           |           |           |           |           | 🛠        | 🛠        | 🛠        | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍     |
 | [rubocop-ruby3_1][rr31] |               |           |           |           |           |           |           | 🛠        | 🛠        | 🛠        | 🛠        | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍     |
 
-[rr19]: https://github.com/rubocop-semver/rubocop-ruby1_9
-[rr20]: https://github.com/rubocop-semver/rubocop-ruby2_0
-[rr21]: https://github.com/rubocop-semver/rubocop-ruby2_1
-[rr22]: https://github.com/rubocop-semver/rubocop-ruby2_2
-[rr23]: https://github.com/rubocop-semver/rubocop-ruby2_3
-[rr24]: https://github.com/rubocop-semver/rubocop-ruby2_4
-[rr25]: https://github.com/rubocop-semver/rubocop-ruby2_5
-[rr26]: https://github.com/rubocop-semver/rubocop-ruby2_6
-[rr27]: https://github.com/rubocop-semver/rubocop-ruby2_7
-[rr30]: https://github.com/rubocop-semver/rubocop-ruby3_0
-[rr31]: https://github.com/rubocop-semver/rubocop-ruby3_1
-[what1_8]: https://github.com/rubocop-semver/rubocop-ruby1_9#what-about-ruby-18
+[rr19]: https://github.com/rubocop-lts/rubocop-ruby1_9
+[rr20]: https://github.com/rubocop-lts/rubocop-ruby2_0
+[rr21]: https://github.com/rubocop-lts/rubocop-ruby2_1
+[rr22]: https://github.com/rubocop-lts/rubocop-ruby2_2
+[rr23]: https://github.com/rubocop-lts/rubocop-ruby2_3
+[rr24]: https://github.com/rubocop-lts/rubocop-ruby2_4
+[rr25]: https://github.com/rubocop-lts/rubocop-ruby2_5
+[rr26]: https://github.com/rubocop-lts/rubocop-ruby2_6
+[rr27]: https://github.com/rubocop-lts/rubocop-ruby2_7
+[rr30]: https://github.com/rubocop-lts/rubocop-ruby3_0
+[rr31]: https://github.com/rubocop-lts/rubocop-ruby3_1
+[what1_8]: https://github.com/rubocop-lts/rubocop-ruby1_9#what-about-ruby-18
 [rubocop-matrix]: https://github.com/rubocop/rubocop/blob/master/docs/modules/ROOT/pages/compatibility.adoc#support-matrix
 
 ## Stable
@@ -138,7 +138,7 @@ See [CONTRIBUTING.md][contributing]
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=rubocop-semver/rubocop-ruby3_0)]("https://github.com/rubocop-semver/rubocop-ruby3_0/graphs/contributors")
+[![Contributors](https://contrib.rocks/image?repo=rubocop-lts/rubocop-ruby3_0)]("https://github.com/rubocop-lts/rubocop-ruby3_0/graphs/contributors")
 
 Made with [contributors-img](https://contrib.rocks).
 
@@ -162,7 +162,7 @@ Source: [Unsplash][org-logo-source]
 License: [Unsplash License][org-logo-license]
 </details>
 
-[project-logos]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/docs/images/logo/README.txt
+[project-logos]: https://github.com/rubocop-lts/rubocop-ruby3_0/blob/main/docs/images/logo/README.txt
 [org-logo-author]: https://unsplash.com/@yusufevli
 [org-logo-source]: https://unsplash.com/photos/yaSLNLtKRIU
 [org-logo-license]: https://unsplash.com/license
@@ -175,7 +175,7 @@ License: [Unsplash License][org-logo-license]
 
 ## Code of Conduct
 
-Everyone interacting in the Rubocop::Ruby30 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Rubocop::Ruby30 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rubocop-lts/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md).
 
 ## Versioning
 
@@ -195,15 +195,15 @@ spec.add_dependency "rubocop-ruby3_0", "~> 1.0"
 
 [copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
 
-[gh_discussions]: https://github.com/rubocop-semver/rubocop-ruby3_0/discussions
+[gh_discussions]: https://github.com/rubocop-lts/rubocop-ruby3_0/discussions
 
-[conduct]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md
+[conduct]: https://github.com/rubocop-lts/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md
 
-[contributing]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/CONTRIBUTING.md
+[contributing]: https://github.com/rubocop-lts/rubocop-ruby3_0/blob/main/CONTRIBUTING.md
 
-[security]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/SECURITY.md
+[security]: https://github.com/rubocop-lts/rubocop-ruby3_0/blob/main/SECURITY.md
 
-[license]: https://github.com/rubocop-semver/rubocop-ruby3_0/blob/main/LICENSE.txt
+[license]: https://github.com/rubocop-lts/rubocop-ruby3_0/blob/main/LICENSE.txt
 
 [license-ref]: https://opensource.org/licenses/MIT
 
@@ -227,27 +227,27 @@ spec.add_dependency "rubocop-ruby3_0", "~> 1.0"
 
 [politicme]: https://nationalprogressiveparty.org
 
-[documentation]: https://rubydoc.info/github/rubocop-semver/rubocop-ruby3_0/main
+[documentation]: https://rubydoc.info/github/rubocop-lts/rubocop-ruby3_0/main
 
-[source]: https://github.com/rubocop-semver/rubocop-ruby3_0/
+[source]: https://github.com/rubocop-lts/rubocop-ruby3_0/
 
-[actions]: https://github.com/rubocop-semver/rubocop-ruby3_0/actions
+[actions]: https://github.com/rubocop-lts/rubocop-ruby3_0/actions
 
-[issues]: https://github.com/rubocop-semver/rubocop-ruby3_0/issues
+[issues]: https://github.com/rubocop-lts/rubocop-ruby3_0/issues
 
-[climate_maintainability]: https://codeclimate.com/github/rubocop-semver/rubocop-ruby3_0/maintainability
+[climate_maintainability]: https://codeclimate.com/github/rubocop-lts/rubocop-ruby3_0/maintainability
 
-[climate_coverage]: https://codeclimate.com/github/rubocop-semver/rubocop-ruby3_0/test_coverage
+[climate_coverage]: https://codeclimate.com/github/rubocop-lts/rubocop-ruby3_0/test_coverage
 
-[codecov_coverage]: https://codecov.io/gh/rubocop-semver/rubocop-ruby3_0
+[codecov_coverage]: https://codecov.io/gh/rubocop-lts/rubocop-ruby3_0
 
-[code_triage]: https://www.codetriage.com/rubocop-semver/rubocop-ruby3_0
+[code_triage]: https://www.codetriage.com/rubocop-lts/rubocop-ruby3_0
 
 [blogpage]: http://www.railsbling.com/tags/rubocop-ruby3_0/
 
 [rubygems]: https://rubygems.org/gems/rubocop-ruby3_0
 
-[chat]: https://gitter.im/rubocop-semver/rubocop-ruby3_0?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[chat]: https://gitter.im/rubocop-lts/rubocop-ruby3_0?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
 [maintenancee_policy]: https://guides.rubyonrails.org/maintenance_policy.html#security-issues
 

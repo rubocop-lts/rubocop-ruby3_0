@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.executables = []
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 1.28.2"
+  spec.add_dependency "rubocop", ">= 1.28.2", "< 1.30.0"
 
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"

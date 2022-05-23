@@ -13,10 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-## [1.0.3] 2022-05-06
+## [1.0.3] 2022-05-23
 ### Added
 * Rubocop => RuboCop typo repair
 * Ruby Version Support Matrix
+* Improved documentation
 
 ## [1.0.2] 2022-05-03
 ### Fixed

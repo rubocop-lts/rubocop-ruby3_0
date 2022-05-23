@@ -80,11 +80,11 @@ official [compatibility matrix][rubocop-matrix] for `rubocop`.
 [what1_8]: https://github.com/rubocop-lts/rubocop-ruby1_9#what-about-ruby-18
 [rubocop-matrix]: https://github.com/rubocop/rubocop/blob/master/docs/modules/ROOT/pages/compatibility.adoc#support-matrix
 
-## Stable
+## 🗿 Stable
 
 All releases of this gem are stable releases. The first version is `1.0.0`.
 
-## Installation
+## ✨ Installation
 
 Install the gem and add to the application's Gemfile by executing:
 
@@ -94,7 +94,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     $ gem install rubocop-ruby3_0
 
-## Usage
+## 🔧 Usage
 
 The following is optional.  We'll discuss why you might want to do this after you see what it does.
 
@@ -116,11 +116,11 @@ AllCops:
 
 Let's talk about these settings.
 
-## TargetRubyVersion
+### TargetRubyVersion
 
 Allowing this gem to manage the target ruby version means you can switch to a different gem within the family when you upgrade to the next version of Ruby, and have nothing else to change.  A single line in the `Gemfile`, and you are done.
 
-## NewCops: enable
+### NewCops: enable
 
 You may not use this setting in your project yet.  Upgrades to the latest RuboCop can include all kinds of changes, including removing support for the version of Ruby your project uses, or adding a cop that may not work with some of your syntax (e.g. [some use cases of 'module_function`](https://github.com/rubocop/rubocop/issues/5953#issuecomment-805921993)).  Accepting new cops arriving in a new version of RuboCop can feel risky, especially when it doesn't follow SemVer.
 
@@ -132,17 +132,17 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
-## Contributing
+## ⚡️ Contributing
 
 See [CONTRIBUTING.md][contributing]
 
-## Contributors
+## 🌈 Contributors
 
 [![Contributors](https://contrib.rocks/image?repo=rubocop-lts/rubocop-ruby3_0)]("https://github.com/rubocop-lts/rubocop-ruby3_0/graphs/contributors")
 
 Made with [contributors-img](https://contrib.rocks).
 
-## License
+## 📄 License
 
 The gem is available as open source under the terms of
 the [MIT License][license] [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)][license-ref].
@@ -167,17 +167,17 @@ License: [Unsplash License][org-logo-license]
 [org-logo-source]: https://unsplash.com/photos/yaSLNLtKRIU
 [org-logo-license]: https://unsplash.com/license
 
-### Copyright
+### © Copyright
 
 * Copyright (c) 2022 [Peter H. Boling][peterboling] of [Rails Bling][railsbling]
 
 [copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
 
-## Code of Conduct
+## 🤝 Code of Conduct
 
 Everyone interacting in the Rubocop::Ruby30 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rubocop-lts/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md).
 
-## Versioning
+## 📌 Versioning
 
 This library aims to adhere to [Semantic Versioning 2.0.0][semver]. Violations of this scheme should be reported as
 bugs. Specifically, if a minor or patch version is released that breaks backward compatibility, a new version should be

@@ -86,7 +86,7 @@ This gem requires no other gems. It depends on `rubocop`, but does not `require 
 
 Awareness of `rubocop`'s lack of [SemVer][semver] adherence isn't evenly dispersed in the Ruby community.
 
-The Rubocop team [has real reasons](https://github.com/semver/semver/issues/317)
+The RuboCop team [has real reasons](https://github.com/semver/semver/issues/317)
 for [not following SemVer](https://github.com/rubocop/rubocop/issues/4243), but if you've
 found this project their reasons likely weigh less, in your context (e.g. running `rubocop` from command line), than
 what brought you here.

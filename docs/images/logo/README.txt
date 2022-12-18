@@ -16,7 +16,7 @@ Base64 Converter: <https://codebeautify.org/svg-to-base64-converter>
 
 ---
 
-The Rubocop Logo (Light) - rubocop-light.svg
+The RuboCop Logo (Light) - rubocop-light.svg
 
 Original PNG Source: rubocop/rubocop <https://docs.rubocop.org/rubocop/1.27/about/logo.html>
 Original PNG Author: Copyright (c) 2014 <Dimiter Petrov> <https://www.chadomoto.com/>
@@ -26,7 +26,7 @@ SVG Author: Gil Barbara <https://github.com/gilbarbara>
 
 ---
 
-The Rubocop Logo (Dark) - rubocop-dark.svg
+The RuboCop Logo (Dark) - rubocop-dark.svg
 
 Original PNG Source: rubocop/rubocop <https://docs.rubocop.org/rubocop/1.27/about/logo.html>
 Original PNG Author: Copyright (c) 2014 <Dimiter Petrov> <https://www.chadomoto.com/>

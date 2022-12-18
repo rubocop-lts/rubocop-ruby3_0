@@ -12,7 +12,7 @@ on:
 
 jobs:
   rubocop:
-    name: Rubocop
+    name: RuboCop
     strategy:
       fail-fast: false
       matrix:
@@ -38,5 +38,5 @@ jobs:
           rubygems: ${{ matrix.rubygems }}
           bundler: ${{ matrix.bundler }}
           bundler-cache: true
-      - name: Run Rubocop
+      - name: Run RuboCop
         run: bundle exec rubocop -DESP

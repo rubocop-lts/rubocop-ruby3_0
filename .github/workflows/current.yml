@@ -32,7 +32,6 @@ jobs:
       matrix:
         experimental: [false]
         gemfile:
-          - vanilla
           - rails7
         rubygems:
           - latest

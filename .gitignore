@@ -12,4 +12,4 @@
 .rspec_status
 
 # Gemfile Lock files
-gemfiles/*.gemfile
+gemfiles/*.lock

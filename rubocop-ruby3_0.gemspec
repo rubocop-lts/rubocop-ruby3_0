@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Peter Boling"]
   spec.email = ["peter.boling@gmail.com"]
 
-  spec.cert_chain  = ['certs/pboling.pem']
-  spec.signing_key = File.expand_path('~/.ssh/gem-private_key.pem') if $PROGRAM_NAME.end_with?('gem')
+  spec.cert_chain  = ["certs/pboling.pem"]
+  spec.signing_key = File.expand_path("~/.ssh/gem-private_key.pem") if $PROGRAM_NAME.end_with?("gem")
 
   spec.summary = "Semantically Versioned RuboCop Dependency"
   spec.description = "Links dependency on minimum Ruby version to maximum RuboCop version"

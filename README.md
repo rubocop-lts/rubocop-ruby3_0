@@ -101,50 +101,63 @@ The purpose of this gem is to constrain the `rubocop` dependency of a project in
 a [SemVer compliant](https://semver.org/) (Semantic Versioning) way that aligns with the the desired minimum
 compatible/supported Ruby version.
 
-## Ruby Version Support Matrix
+## Ruby Version Support
 
 Adding this gem will facilitate the best practice of adding a `~> ` version constrained `rubocop` dependency, while
 minimizing the risk of a rubocop minor / patch upgrade breaking the build. See the
 official [compatibility matrix][rubocop-matrix] for `rubocop`.
 
-`rubocop-ruby3_0` (this gem) will install on any version of Ruby >= 3.0, and can be used to analyze code intended to support Ruby >= 3.0.
+### Three Guarantees
 
-* 🧊 - Install on Ruby `<version>`
-* 🏃‍ - Will Execute on Ruby `<version>`
-* 🪷 - Will not execute correctly on Ruby `<version>`
-* 🛠 - Lint code with Ruby `<version>` syntax as the target
+`rubocop-ruby3_0` (this gem) will install a version of `rubocop` which will
+**install** on (1), **run** on (2), and **analyze code** (3) intended to support any version of Ruby >= 3.0.
 
-| gem                     | 1.8.7         | 1.9.3     | 2.0       | 2.1       | 2.2       | 2.3       | 2.4       | 2.5       | 2.6       | 2.7       | 3.0       | 3.1       | ruby-head | jruby-head |
-|-------------------------|---------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|------------|
-| [rubocop-ruby1_9][rr19] | [🛠][what1_8] | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🪷     | 🧊 🪷     | 🧊 🪷      |
-| [rubocop-ruby2_0][rr20] |               |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🪷     | 🧊 🪷     | 🧊 🪷      |
-| [rubocop-ruby2_1][rr21] |               |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🪷     | 🧊 🪷     | 🧊 🪷      |
-| [rubocop-ruby2_2][rr22] |               |           |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊‍ 🪷    | 🧊 🪷     | 🧊 🪷     | 🧊 🪷      |
-| [rubocop-ruby2_3][rr23] |               |           |           |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🪷     | 🧊 🪷     | 🧊 🪷      |
-| [rubocop-ruby2_4][rr24] |               |           |           |           |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🪷     | 🧊 🪷     | 🧊 🪷      |
-| [rubocop-ruby2_5][rr25] |               |           |           |           |           |           |           | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🪷      |
-| [rubocop-ruby2_6][rr26] |               |           |           |           |           |           |           | 🛠        | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🪷      |
-| [rubocop-ruby2_7][rr27] |               |           |           |           |           |           |           | 🛠        | 🛠        | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍     |
-| [rubocop-ruby3_0][rr30] |               |           |           |           |           |           |           | 🛠        | 🛠        | 🛠        | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍    | 🧊 🏃‍     |
-| [rubocop-ruby3_1][rr31] |               |           |           |           |           |           |           | 🛠        | 🛠        | 🛠        | 🛠        | 🧊 🏃‍ 🛠 | 🧊 🏃‍    | 🧊 🏃‍     |
+Any change to any of those three abilities would require a major version bump.
+Each [spring `rubocop` drops][rubocop-matrix] the ability to **install** and **run** `rubocop` on an EOL'd Ruby.
+Eventually `rubocop` will drop the ability to **analyze code** intended to support an EOL'd Ruby,
+as they already have for Ruby 1.8 and 1.9.
+When the `rubocop` team makes any of these changes they typically only bump the minor version of ruby,
+in violation of SemVer.  This is a primary _raison d’être_ for this project.
 
-[rr19]: https://github.com/rubocop-lts/rubocop-ruby1_9
-[rr20]: https://github.com/rubocop-lts/rubocop-ruby2_0
-[rr21]: https://github.com/rubocop-lts/rubocop-ruby2_1
-[rr22]: https://github.com/rubocop-lts/rubocop-ruby2_2
-[rr23]: https://github.com/rubocop-lts/rubocop-ruby2_3
-[rr24]: https://github.com/rubocop-lts/rubocop-ruby2_4
-[rr25]: https://github.com/rubocop-lts/rubocop-ruby2_5
-[rr26]: https://github.com/rubocop-lts/rubocop-ruby2_6
-[rr27]: https://github.com/rubocop-lts/rubocop-ruby2_7
-[rr30]: https://github.com/rubocop-lts/rubocop-ruby3_0
-[rr31]: https://github.com/rubocop-lts/rubocop-ruby3_1
-[what1_8]: https://github.com/rubocop-lts/rubocop-ruby1_9#what-about-ruby-18
+### A Gem Family
+
+The `rubocop-lts` series of gems has a version supporting any version of Ruby you need.
+They can be used as development dependencies for libraries or applications.
+
+- [`rubocop-ruby1_9`][rr19]
+  - [Still supporting Ruby 1.8?][what1_8]
+- [`rubocop-ruby2_0`][rr20]
+- [`rubocop-ruby2_1`][rr21]
+- [`rubocop-ruby2_2`][rr22]
+- [`rubocop-ruby2_3`][rr23]
+- [`rubocop-ruby2_4`][rr24]
+- [`rubocop-ruby2_5`][rr25]
+- [`rubocop-ruby2_6`][rr26]
+- [`rubocop-ruby2_7`][rr27]
+- [`rubocop-ruby3_0`][rr30]
+- [`rubocop-ruby3_1`][rr31]
+
+[rr19]: https://gitlab.com/rubocop-lts/rubocop-ruby1_9
+[rr20]: https://gitlab.com/rubocop-lts/rubocop-ruby2_0
+[rr21]: https://gitlab.com/rubocop-lts/rubocop-ruby2_1
+[rr22]: https://gitlab.com/rubocop-lts/rubocop-ruby2_2
+[rr23]: https://gitlab.com/rubocop-lts/rubocop-ruby2_3
+[rr24]: https://gitlab.com/rubocop-lts/rubocop-ruby2_4
+[rr25]: https://gitlab.com/rubocop-lts/rubocop-ruby2_5
+[rr26]: https://gitlab.com/rubocop-lts/rubocop-ruby2_6
+[rr27]: https://gitlab.com/rubocop-lts/rubocop-ruby2_7
+[rr30]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0
+[rr31]: https://gitlab.com/rubocop-lts/rubocop-ruby3_1
+[what1_8]: https://gitlab.com/rubocop-lts/rubocop-ruby1_9#what-about-ruby-18
 [rubocop-matrix]: https://github.com/rubocop/rubocop/blob/master/docs/modules/ROOT/pages/compatibility.adoc#support-matrix
 
 ## 🗿 Stable
 
-All releases of this gem are stable releases. The first version is `1.0.0`.
+All releases of this gem are stable releases.
+We do not release new versions for every release of `rubocop`.
+A typical release cycle for a gem in the `rubocop-lts` family is roughly every six months,
+though eventually analysis support for an old version of Ruby will be dropped.
+When that happens releases of the `rubocop-lts` gem for that version of Ruby will (mostly) cease.
 
 ## ✨ Installation
 
@@ -252,7 +265,7 @@ the [Pessimistic Version Constraint][pvc] with two digits of precision.
 For example:
 
 ```ruby
-spec.add_dependency "rubocop-ruby3_0", "~> 1.0"
+spec.add_dependency "rubocop-ruby3_0", "~> 1.1"
 ```
 
 [copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year

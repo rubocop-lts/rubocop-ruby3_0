@@ -9,7 +9,7 @@ source "https://rubygems.org"
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-# Specify your gem's dependencies in rubocop-ruby3_0.gemspec
+# Specify actual dependencies in the *.gemspec
 gemspec
 
 # Only add to the set of gems from the gemspec when running on local.

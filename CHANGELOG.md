@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 ### Changed
 ### Fixed
+* Do not require version.rb from gemspec so code coverage is accurate from both `rake` and `rspec`
 ### Removed
 
 ## [1.1.0] 2022-12-18

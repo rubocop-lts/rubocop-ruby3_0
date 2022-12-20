@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] 2022-12-18
 ### Changed
 * Update to rubocop `~> 1.40.0`
-* ### Added
+### Added
 * Gem release ships with `SHA512` and `SHA256` checksums
 * Release is securely signed by author
 * Document release process in `CONTRIBUTING.md`

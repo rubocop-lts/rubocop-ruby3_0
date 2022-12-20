@@ -8,8 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 ### Changed
 ### Fixed
-* Do not require version.rb from gemspec so code coverage is accurate from both `rake` and `rspec`
 ### Removed
+
+## [1.1.1] 2022-12-20
+### Fixed
+* Do not require version.rb from gemspec so code coverage is accurate from both `rake` and `rspec`
+* Typos in CHANGELOG & Documentation
+### Changed
+* Minimum Code Coverage == 100%
 
 ## [1.1.0] 2022-12-18
 ### Changed
@@ -18,7 +24,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Gem release ships with `SHA512` and `SHA256` checksums
 * Release is securely signed by author
 * Document release process in `CONTRIBUTING.md`
-* Improved Documentation related to Three Guarantees
+* Documentation of Three Guarantees:
+    * `rubocop-ruby2_7` (this gem) will install a version of `rubocop` which will
+      **install** on (1), **run** on (2), and **analyze code** (3) intended to support any version of Ruby >= 2.7.
 
 ## [1.0.6] 2022-06-08
 ### Changed
@@ -52,7 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * Initial release
 
-[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.0.6...v1.1.0
 [1.0.6]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.0.4...v1.0.5

@@ -24,7 +24,7 @@ if RUN_COVERAGE
       formatter SimpleCov::Formatter::HTMLFormatter
     end
 
-    minimum_coverage(line: 70, branch: 70)
+    minimum_coverage(line: 100, branch: 100)
   end
 else
   puts "Not running coverage on #{RUBY_VERSION}-#{RUBY_ENGINE}"

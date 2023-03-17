@@ -29,7 +29,7 @@ if ENV["CI"].nil?
       gem "rubocop-packaging", "~> 0.5", require: false
       gem "rubocop-performance", "~> 1.11", require: false
       gem "rubocop-rake", "~> 0.6", require: false
-      gem "rubocop-rspec", require: false
+      gem "rubocop-rspec", "~> 2.19", require: false
       gem "rubocop-thread_safety", "~> 0.4", require: false
     end
     if coverage

@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     rubocop-ruby3_0 (1.1.1)
-      rubocop (~> 1.40.0)
+      rubocop (~> 1.48.1)
 
 GEM
   remote: https://rubygems.org/
@@ -42,18 +42,20 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
-    rubocop (1.40.0)
+    rubocop (1.48.1)
       json (~> 2.3)
       parallel (~> 1.10)
-      parser (>= 3.1.2.1)
+      parser (>= 3.2.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.23.0, < 2.0)
+      rubocop-ast (>= 1.26.0, < 2.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 1.4.0, < 3.0)
+      unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.27.0)
       parser (>= 3.2.1.0)
+    rubocop-capybara (2.17.1)
+      rubocop (~> 1.41)
     rubocop-md (1.2.0)
       rubocop (>= 1.0)
     rubocop-packaging (0.5.2)
@@ -63,8 +65,9 @@ GEM
       rubocop-ast (>= 0.4.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.17.1)
+    rubocop-rspec (2.19.0)
       rubocop (~> 1.33)
+      rubocop-capybara (~> 2.17)
     rubocop-thread_safety (0.4.4)
       rubocop (>= 0.53.0)
     ruby-progressbar (1.13.0)
@@ -103,7 +106,7 @@ DEPENDENCIES
   rubocop-packaging (~> 0.5)
   rubocop-performance (~> 1.11)
   rubocop-rake (~> 0.6)
-  rubocop-rspec
+  rubocop-rspec (~> 2.19)
   rubocop-ruby3_0!
   rubocop-thread_safety (~> 0.4)
   simplecov (~> 0.21)

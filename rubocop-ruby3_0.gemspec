@@ -3,12 +3,12 @@
 # Get the GEMFILE_VERSION without *require* "my_gem/version", for code coverage accuracy
 # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-825171399
 load "lib/rubocop/ruby3_0/version.rb"
-GEM_VERSION = Rubocop::Ruby30::VERSION
+gem_version = Rubocop::Ruby30::VERSION
 Rubocop::Ruby30.send(:remove_const, :VERSION)
 
 Gem::Specification.new do |spec|
   spec.name = "rubocop-ruby3_0"
-  spec.version = GEM_VERSION
+  spec.version = gem_version
   spec.authors = ["Peter Boling"]
   spec.email = ["peter.boling@gmail.com"]
 

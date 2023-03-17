@@ -86,10 +86,14 @@ This gem requires no other gems. It depends on `rubocop`, but does not `require 
 
 Awareness of `rubocop`'s lack of [SemVer][semver] adherence isn't evenly dispersed in the Ruby community.
 
-The RuboCop team [has real reasons](https://github.com/semver/semver/issues/317)
-for [not following SemVer](https://github.com/rubocop/rubocop/issues/4243), but if you've
-found this project their reasons likely weigh less, in your context (e.g. running `rubocop` from command line), than
-what brought you here.
+The RuboCop team [has reasons](https://github.com/semver/semver/issues/317)
+for [not following SemVer](https://github.com/rubocop/rubocop/issues/4243).
+
+NOTE: They think they are following SemVer,
+but their interpretation differs from mine, and seems to differ from the
+[intent of SemVer's creator][major-versions-not-sacred].
+
+If you need to run `rubocop` from command line in an older version of Ruby, you've come to the right place.
 
 <p align="left">
     <a href="https://metaredux.com/posts/2022/04/21/rubocop-turns-10.html" target="_blank" rel="noopener">
@@ -98,26 +102,39 @@ what brought you here.
 </p>
 
 The purpose of this gem is to constrain the `rubocop` dependency of a project in
-a [SemVer compliant](https://semver.org/) (Semantic Versioning) way that aligns with the the desired minimum
-compatible/supported Ruby version.
+a [SemVer compliant][semver]
+(Semantic Versioning, [Major Versions are Not Sacred][major-versions-not-sacred])
+way that aligns with the the desired minimum compatible/supported Ruby version.
 
 ## Ruby Version Support
 
 Adding this gem will facilitate the best practice of adding a `~> ` version constrained `rubocop` dependency, while
 minimizing the risk of a rubocop minor / patch upgrade breaking the build. See the
-official [compatibility matrix][rubocop-matrix] for `rubocop`.
+official [compatibility matrix][rubocop-support-matrix] for `rubocop`.
 
 ### Three Guarantees
 
-`rubocop-ruby3_0` (this gem) will install a version of `rubocop` which will
-**install** on (1), **run** on (2), and **analyze code** (3) intended to support any version of Ruby >= 3.0.
+This gem will install a version of `rubocop` which will
+**install** on (1), **run** on (2), and **analyze code** (3) intended to support any version of Ruby >= 2.7.
 
 Any change to any of those three abilities would require a major version bump.
-Each [spring `rubocop` drops][rubocop-matrix] the ability to **install** and **run** `rubocop` on an EOL'd Ruby.
+Each [spring `rubocop` drops][rubocop-support-matrix] the ability to **install** and **run** `rubocop` on an EOL'd Ruby.
 Eventually `rubocop` will drop the ability to **analyze code** intended to support an EOL'd Ruby,
 as they already have for Ruby 1.8 and 1.9.
-When the `rubocop` team makes any of these changes they typically only bump the minor version of ruby,
-in violation of SemVer.  This is a primary _raison d’être_ for this project.
+When the `rubocop` team makes _any_ of these changes they
+[only bump the minor version][rubocop-versioning] of RuboCop,
+in violation of SemVer ([they disagree][rubocop-release-policy]).
+In other words, RuboCop intentionally does not bump the major version when they drop
+_analysis_, _runtime_, or _installation_ support for a given version of Ruby.
+This is a primary _raison d’être_ for this project.
+To get a better understanding of how SemVer is intended to work read this article from the creator of SemVer:
+
+- ["Major Version Numbers are Not Sacred"][major-versions-not-sacred]
+
+[rubocop-support-matrix]: https://docs.rubocop.org/rubocop/compatibility.html#support-matrix
+[rubocop-versioning]: https://docs.rubocop.org/rubocop/versioning.html
+[rubocop-release-policy]: https://docs.rubocop.org/rubocop/versioning.html#release-policy
+[major-versions-not-sacred]: https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html
 
 ### A Gem Family
 

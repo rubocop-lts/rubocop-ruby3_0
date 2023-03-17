@@ -261,7 +261,7 @@ License: [Unsplash License][org-logo-license]
 
 ### © Copyright
 
-* Copyright (c) 2022 [Peter H. Boling][peterboling] of [Rails Bling][railsbling]
+* Copyright (c) 2022 - 2023 [Peter H. Boling][peterboling] of [Rails Bling][railsbling]
 
 [copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
 

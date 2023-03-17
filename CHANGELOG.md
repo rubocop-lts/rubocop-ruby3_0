@@ -10,6 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
+## [1.1.2] 2023-03-17
+### Added
+* GitLab CI config
+### Changed
+* Upgraded to RuboCop v1.48.1
+    * Compatible with rubocop-packaging ~> 0.5.2
+* Improved development documentation
+* Improved documentation on SemVer adherence
+### Fixed
+* Stop defining global variable in version.rb
+
 ## [1.1.1] 2022-12-20
 ### Fixed
 * Do not require version.rb from gemspec so code coverage is accurate from both `rake` and `rspec`
@@ -60,7 +71,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * Initial release
 
-[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.0.6...v1.1.0
 [1.0.6]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.0.5...v1.0.6

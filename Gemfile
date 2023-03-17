@@ -51,5 +51,3 @@ if ENV["CI"].nil?
     gem "pry-debugger-jruby"
   end
 end
-
-gem "yard", "~> 0.9"

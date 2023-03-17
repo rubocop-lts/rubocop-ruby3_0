@@ -26,7 +26,7 @@ See: [RubyGems Security Guide][rubygems-security-guide]
 
 ## Contributors
 
-See: [https://gitlab.com/rubocop-lts/rubocop-ruby3_)/-/graphs/main][🖐contributors]
+See: [https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/graphs/main][🖐contributors]
 
 [comment]: <> (Following links are used by README, CONTRIBUTING, Homepage)
 

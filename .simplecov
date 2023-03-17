@@ -19,7 +19,8 @@ if RUN_COVERAGE
     track_files "**/*.rb"
 
     if ALL_FORMATTERS
-      command_name "#{ENV.fetch("GITHUB_WORKFLOW", nil)} Job #{ENV.fetch("GITHUB_RUN_ID", nil)}:#{ENV.fetch("GITHUB_RUN_NUMBER", nil)}"
+      command_name "#{ENV.fetch("GITHUB_WORKFLOW",
+                                nil)} Job #{ENV.fetch("GITHUB_RUN_ID", nil)}:#{ENV.fetch("GITHUB_RUN_NUMBER", nil)}"
     else
       formatter SimpleCov::Formatter::HTMLFormatter
     end

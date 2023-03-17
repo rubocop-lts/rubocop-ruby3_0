@@ -16,7 +16,7 @@ gemspec
 # All CI jobs must use a discrete Gemfile located at gemfiles/*.gemfile. They will not use this Gemfile
 if ENV["CI"].nil?
   ruby_version = Gem::Version.new(RUBY_VERSION)
-  minimum_version = ->(version, engine = "ruby") { ruby_version >= Gem::Version.new(version) && RUBY_ENGINE == engine }
+  minimum_version = ->(version, engine = "ruby") { ruby_version >= Gem::Version.new(version) && engine == RUBY_ENGINE }
   coverage = minimum_version.call("3.0")
   linting = minimum_version.call("3.0")
   debugging = minimum_version.call("3.0")
@@ -51,3 +51,5 @@ if ENV["CI"].nil?
     gem "pry-debugger-jruby"
   end
 end
+
+gem "yard", "~> 0.9"

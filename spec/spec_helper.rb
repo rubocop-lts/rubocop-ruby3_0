@@ -3,7 +3,7 @@
 DEBUG = ENV.fetch("DEBUG", nil) == "true"
 
 ruby_version = Gem::Version.new(RUBY_VERSION)
-minimum_version = ->(version, engine = "ruby") { ruby_version >= Gem::Version.new(version) && RUBY_ENGINE == engine }
+minimum_version = ->(version, engine = "ruby") { ruby_version >= Gem::Version.new(version) && engine == RUBY_ENGINE }
 actual_version = lambda do |major, minor|
   actual = Gem::Version.new(ruby_version)
   major == actual.segments[0] && minor == actual.segments[1] && RUBY_ENGINE == "ruby"

@@ -4,7 +4,7 @@
 require "digest/sha2"
 gems = Dir["*.gem"]
 puts "Found: #{gems.inspect}"
-raise "No Gems" if gems.length.zero?
+raise "No Gems" if gems.empty?
 raise "Too Many Gems" if gems.length > 1
 
 built_gem_path = gems.first

@@ -113,7 +113,7 @@ DEPENDENCIES
   simplecov-cobertura
   simplecov-json
   simplecov-lcov (~> 0.8)
-  yard
+  yard (~> 0.9)
 
 BUNDLED WITH
    2.4.8

@@ -32,7 +32,6 @@ inherit_from:
   - strict/ruby.yml
 
 AllCops:
-  TargetRubyVersion: 3.0
   # When the Ruby community, via RuboCop, adopts a new standard
   #   (with additional filtering by standard.rb and rubocop-shopify) it is good enough for us!
   NewCops: enable

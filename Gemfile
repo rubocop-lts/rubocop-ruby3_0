@@ -17,7 +17,7 @@ IS_CI = !ENV["CI"].nil?
 LOCAL_SUPPORTED = !IS_CI && Gem::Version.new("3.0") <= RUBY_VER && RUBY_ENGINE == "ruby"
 # rubocop:enable Layout/LeadingCommentSpace
 
-if LOCAL_SUPPORTED
+if LOCAL_SUPPORTED || IS_CI
   # Coverage
   eval_gemfile "./gemfiles/contexts/coverage.gemfile"
 

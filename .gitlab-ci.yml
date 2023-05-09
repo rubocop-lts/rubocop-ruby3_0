@@ -1,8 +1,8 @@
 default:
-  image: ruby:2.7.7
+  image: ruby:3.0.6
 
   before_script:
-    - gem install bundler -v 2.4.8
+    - gem install bundler -v 2.4.12
     - bundle install
 
 example_job:

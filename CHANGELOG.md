@@ -43,9 +43,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.1] 2022-12-20
 ### Fixed
-* Documentation of Three Guarantees:
-  * `rubocop-ruby3_0` (this gem) will install a version of `rubocop` which will
-    **install** on (1), **run** on (2), and **analyze code** (3) intended to support any version of Ruby >= 2.7.
+* Documentation
 ### Changed
 * Minimum code coverage == 100%
 

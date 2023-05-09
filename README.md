@@ -130,7 +130,7 @@ minimizing the risk of a rubocop minor / patch upgrade breaking the build.
 
 ### What's that you say?
 
-This gem will install a suite of tools that will **analyze code** intended to support any version of Ruby >= 2.7.
+This gem will install a suite of tools that will **analyze code** intended to support any version of Ruby >= 3.0.
 
 This gem helps insulate projects from RuboCop churn by enshrining many conventions
 that have been shown over years to reduce problems.
@@ -227,7 +227,7 @@ Among _many_ other settings, this has the effect of declaring the following:
 ```yaml
 AllCops:
   # remove if already present in your `.rubocop-lts.yml` to gain the full benefit of this gem!
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.0
   NewCops: enable
 ```
 

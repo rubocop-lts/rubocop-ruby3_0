@@ -25,7 +25,7 @@ require:
   - rubocop/gradual/patch
 
 inherit_gem:
-  standard: config/ruby-2.7.yml
+  standard: config/ruby-3.0.yml
   rubocop-shopify: rubocop.yml
 
 inherit_from:

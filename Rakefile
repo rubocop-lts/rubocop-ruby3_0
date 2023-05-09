@@ -13,33 +13,6 @@ end
 desc "alias test task to spec"
 task test: :spec
 
-ruby_version = Gem::Version.new(RUBY_VERSION)
-minimum_version = ->(version, engine = "ruby") { ruby_version >= Gem::Version.new(version) && engine == RUBY_ENGINE }
-linting = minimum_version.call("3.0")
-def rubocop_task(warning)
-  desc "rubocop task stub"
-  task :rubocop do
-    warn warning
-  end
-end
-
-if linting
-  begin
-    require "rubocop/rake_task"
-    RuboCop::RakeTask.new do |task|
-      task.options = ["-DESP"] # Display the name of the failing cops
-    end
-  rescue LoadError
-    rubocop_task("RuboCop is unexpectedly disabled locally for #{RUBY_ENGINE}-#{RUBY_VERSION}. " \
-                 "Have you run bundle install?")
-  end
-else
-  rubocop_task("RuboCop is disabled locally for #{RUBY_ENGINE}-#{RUBY_VERSION}. " \
-               "If you need it locally on #{RUBY_ENGINE}-#{RUBY_VERSION}, " \
-               "run BUNDLE_GEMFILE=gemfiles/style.gemfile bundle install " \
-               "&& BUNDLE_GEMFILE=gemfiles/style.gemfile bundle exec rubocop")
-end
-
 require "yard"
 YARD::Rake::YardocTask.new do |t|
   t.files = [
@@ -52,10 +25,17 @@ YARD::Rake::YardocTask.new do |t|
     "CONTRIBUTING.md",
     "LICENSE.txt",
     "README.md",
-    "rubocop.yml",
+    "rubocop-lts.yml",
     "SECURITY.md"
   ]
   t.options = ["-m", "markdown"] # optional
 end
 
-task default: %i[test rubocop]
+# Internally this works
+#   load "lib/rubocop/ruby3_0/tasks.rake"
+# But ...
+#   externally it won't, so in other internal projects' Rakefiles we:
+require "rubocop/ruby3_0"
+Rubocop::Ruby30.install_tasks
+
+task default: %i[test rubocop_gradual]

@@ -19,12 +19,8 @@ jobs:
         experimental: [false]
         gemfile:
           - style
-        rubygems:
-          - latest
-        bundler:
-          - latest
         ruby:
-          - "3.0"
+          - "2.7"
     runs-on: ubuntu-latest
     env: # $BUNDLE_GEMFILE must be set at the job level, so it is set for all steps
       BUNDLE_GEMFILE: ${{ github.workspace }}/gemfiles/${{ matrix.gemfile }}.gemfile
@@ -39,4 +35,4 @@ jobs:
           bundler: ${{ matrix.bundler }}
           bundler-cache: true
       - name: Run RuboCop
-        run: bundle exec rubocop -DESP
+        run: bundle exec rake rubocop_gradual

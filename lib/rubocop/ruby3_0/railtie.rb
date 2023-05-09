@@ -1,5 +1,5 @@
 module Rubocop
-  module Ruby27
+  module Ruby30
     class Railtie < Rails::Railtie
       railtie_name :rubocop_ruby3_0
 

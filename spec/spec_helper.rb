@@ -8,8 +8,8 @@ actual_version = lambda do |major, minor|
   actual = Gem::Version.new(ruby_version)
   major == actual.segments[0] && minor == actual.segments[1] && RUBY_ENGINE == "ruby"
 end
-debugging = minimum_version.call("2.7") && DEBUG
-RUN_COVERAGE = minimum_version.call("2.7") && (ENV.fetch("COVER_ALL",
+debugging = minimum_version.call("3.0") && DEBUG
+RUN_COVERAGE = minimum_version.call("3.0") && (ENV.fetch("COVER_ALL",
   nil) || ENV.fetch("CI_CODECOV", nil) || ENV["CI"].nil?)
 ALL_FORMATTERS = actual_version.call(2,
   7) && (ENV.fetch("COVER_ALL",
@@ -18,7 +18,7 @@ ALL_FORMATTERS = actual_version.call(2,
 if DEBUG
   if debugging
     require "byebug"
-  elsif minimum_version.call("2.7", "jruby")
+  elsif minimum_version.call("3.0", "jruby")
     require "pry-debugger-jruby"
   end
 end

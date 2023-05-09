@@ -343,7 +343,7 @@ License: [Unsplash License][org-logo-license]
 
 ## 🤝 Code of Conduct
 
-Everyone interacting in the Rubocop::Ruby30 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rubocop-lts/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in this project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rubocop-lts/rubocop-ruby3_0/blob/main/CODE_OF_CONDUCT.md).
 
 ## 📌 Versioning
 

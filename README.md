@@ -172,7 +172,7 @@ They can be used as development dependencies for libraries or applications.
 - [`rubocop-ruby2_4`][rr24]
 - [`rubocop-ruby2_5`][rr25]
 - [`rubocop-ruby2_6`][rr26]
-- [`rubocop-ruby3_0`][rrini]
+- [`rubocop-ruby2_7`][rr27]
 - [`rubocop-ruby3_0`][rr30]
 - [`rubocop-ruby3_1`][rr31]
 
@@ -184,7 +184,7 @@ They can be used as development dependencies for libraries or applications.
 [rr24]: https://gitlab.com/rubocop-lts/rubocop-ruby2_4
 [rr25]: https://gitlab.com/rubocop-lts/rubocop-ruby2_5
 [rr26]: https://gitlab.com/rubocop-lts/rubocop-ruby2_6
-[rrini]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0
+[rr27]: https://gitlab.com/rubocop-lts/rubocop-ruby2_7
 [rr30]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0
 [rr31]: https://gitlab.com/rubocop-lts/rubocop-ruby3_1
 [what1_8]: https://gitlab.com/rubocop-lts/rubocop-ruby1_9#what-about-ruby-18

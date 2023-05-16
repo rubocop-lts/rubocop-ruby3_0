@@ -160,11 +160,13 @@ To get a better understanding of how SemVer is intended to work read this articl
 
 ### 👪 A Gem Family
 
-The `rubocop-lts` series of gems has a version supporting any version of Ruby you need.
+The `rubocop-lts` family of gems has a version supporting any version of Ruby you need.
 They can be used as development dependencies for libraries or applications.
 
+- [`rubocop-lts`][rlts]
+- [`standard-rubocop-lts`][stdrlts]
+- [`rubocop-ruby1_8`][rr18]
 - [`rubocop-ruby1_9`][rr19]
-    - [Still supporting Ruby 1.8?][what1_8]
 - [`rubocop-ruby2_0`][rr20]
 - [`rubocop-ruby2_1`][rr21]
 - [`rubocop-ruby2_2`][rr22]
@@ -175,7 +177,11 @@ They can be used as development dependencies for libraries or applications.
 - [`rubocop-ruby2_7`][rr27]
 - [`rubocop-ruby3_0`][rr30]
 - [`rubocop-ruby3_1`][rr31]
+- [`rubocop-ruby3_2`][rr32]
 
+[rrlts]: https://github.com/rubocop-lts/rubocop-lts#-how-to-untie-gorgons-knot
+[stdrlts]: https://github.com/rubocop-lts/standard-rubocop-lts
+[rr18]: https://gitlab.com/rubocop-lts/standard-rubocop-lts
 [rr19]: https://gitlab.com/rubocop-lts/rubocop-ruby1_9
 [rr20]: https://gitlab.com/rubocop-lts/rubocop-ruby2_0
 [rr21]: https://gitlab.com/rubocop-lts/rubocop-ruby2_1
@@ -187,7 +193,7 @@ They can be used as development dependencies for libraries or applications.
 [rr27]: https://gitlab.com/rubocop-lts/rubocop-ruby2_7
 [rr30]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0
 [rr31]: https://gitlab.com/rubocop-lts/rubocop-ruby3_1
-[what1_8]: https://gitlab.com/rubocop-lts/rubocop-ruby1_9#what-about-ruby-18
+[rr32]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2
 
 ## 🗿 Stable
 

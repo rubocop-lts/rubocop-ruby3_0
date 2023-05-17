@@ -1,6 +1,6 @@
 ## Contributing
 
-Bug reports and pull requests are welcome on GitLab at [https://gitlab.com/rubocop-lts/rubocop-ruby2_2][🚎src-main]
+Bug reports and pull requests are welcome on GitLab at [https://gitlab.com/rubocop-lts/rubocop-ruby3_0][🚎src-main]
 . This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to
 the [code of conduct][conduct].
 
@@ -27,13 +27,13 @@ See: [RubyGems Security Guide][rubygems-security-guide]
 
 ## Contributors
 
-See: [https://gitlab.com/rubocop-lts/rubocop-ruby2_2/-/graphs/main][🖐contributors]
+See: [https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/graphs/main][🖐contributors]
 
 [comment]: <> (Following links are used by README, CONTRIBUTING, Homepage)
 
-[🤝conduct]: https://gitlab.com/rubocop-lts/rubocop-ruby2_2/-/blob/main/CODE_OF_CONDUCT.md
-[🖐contributors]: https://gitlab.com/rubocop-lts/rubocop-ruby2_2/-/graphs/main
-[🚎src-main]: https://gitlab.com/rubocop-lts/rubocop-ruby2_2/-/tree/main
+[🤝conduct]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/blob/main/CODE_OF_CONDUCT.md
+[🖐contributors]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/graphs/main
+[🚎src-main]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/tree/main
 [🏘chat]: https://gitter.im/rubocop-lts/community
 [rubygems-security-guide]: https://guides.rubygems.org/security/#building-gems
 [rubygems]: https://rubygems.org

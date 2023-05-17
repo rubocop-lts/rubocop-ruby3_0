@@ -36,8 +36,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - rubocop-rspec
 - And optionally, if you are using building a RubyGem:
   - rubocop-packaging
-### Removed
-- Support for Ruby <= 2.6. Minimum Ruby Version is now 2.7
 
 ## [1.1.2] 2023-03-17
 ### Added

@@ -40,21 +40,13 @@ end
 defaults = %i[test]
 
 # Internally this works
-#   load "lib/rubocop/ruby3_1/tasks.rake"
+#   load "lib/rubocop/ruby3_0/tasks.rake"
 # But ...
 #   externally it won't, so in other internal projects' Rakefiles we:
 require "rubocop/ruby3_0"
 
 Rubocop::Ruby30.install_tasks
 
-begin
-  require "rubocop/gradual/rake_task"
-
-  defaults << :rubocop_gradual
-rescue LoadError
-  task :rubocop_gradual do
-    warn "NOTE: rubocop-gradual isn't installed, or is disabled for #{RUBY_VERSION} in the current environment"
-  end
-end
+defaults << :rubocop_gradual
 
 task default: defaults

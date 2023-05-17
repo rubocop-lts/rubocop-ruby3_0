@@ -7,13 +7,10 @@ inherit_mode:
     - Exclude
 
 require:
-  # Standard's config uses custom cops,
-  # so it must be loaded here
-  - standard
-  # RuboCop performance is handled by standard above
-  # - rubocop-performance
+  # Loads the Standard Ruby suite of gems, and configures for rubocop-lts:
+  - standard-rubocop-lts
   # The goal here is convention over configuration...
-  # In light of that, we are well past having convened on Markdown for READMEs and such.
+  # In light of that, we are well past having convened on Markdown for README docs and such.
   - rubocop-md
   # Rubygems have Rakefile as a convention, and if they don't, why not?
   - rubocop-rake
@@ -25,7 +22,8 @@ require:
   - rubocop/gradual/patch
 
 inherit_gem:
-  standard: config/ruby-3.0.yml
+  standard-rubocop-lts: config/ruby-3.0.yml
+  # shopify rules will override standard's rules.
   rubocop-shopify: rubocop.yml
 
 inherit_from:

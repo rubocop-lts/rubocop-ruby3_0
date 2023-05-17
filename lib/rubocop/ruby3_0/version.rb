@@ -2,6 +2,8 @@
 
 module Rubocop
   module Ruby30
-    VERSION = "2.0.0"
+    module Version
+      VERSION = "2.0.1"
+    end
   end
 end

@@ -29,6 +29,15 @@ if LOCAL_SUPPORTED || IS_CI
 
   # Documentation
   eval_gemfile "./gemfiles/contexts/docs.gemfile"
+
+  # Debugging
+  platform :mri do
+    eval_gemfile "./gemfiles/contexts/mri/debug.gemfile"
+  end
+
+  platform :jruby do
+    eval_gemfile "./gemfiles/contexts/jruby/debug.gemfile"
+  end
 end
 
 eval_gemfile "./gemfiles/contexts/core.gemfile"

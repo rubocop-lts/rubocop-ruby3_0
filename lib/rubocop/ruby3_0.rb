@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# external libs
+require "version_gem"
+
+# this gem
 require_relative "ruby3_0/version"
 # :nocov:
 require_relative "ruby3_0/railtie" if defined?(Rails::Railtie)
@@ -12,4 +16,8 @@ module Rubocop
       load "rubocop/ruby3_0/tasks.rake"
     end
   end
+end
+
+Rubocop::Ruby30::Version.class_eval do
+  extend VersionGem::Basic
 end

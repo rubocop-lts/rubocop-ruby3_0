@@ -10,6 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
+## [2.0.1] 2023-04-17
+### Added
+- Configs added for:
+  - standard-performance
+  - standard-custom
+  - standard-rubocop-lts
+- And optionally, if you are building a Rails app:
+  - betterlint
+  - standard-rails
+- version_gem
+
 ## [2.0.0] 2023-04-09
 ### Changed
 - New/Better configs for:
@@ -25,6 +36,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - rubocop-rspec
 - And optionally, if you are using building a RubyGem:
   - rubocop-packaging
+### Removed
+- Support for Ruby <= 2.6. Minimum Ruby Version is now 2.7
 
 ## [1.1.2] 2023-03-17
 ### Added
@@ -85,7 +98,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * Initial release
 
-[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.1...HEAD
+[2.0.0]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.2...v2.0.0
 [1.1.2]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.1.0...v1.1.1

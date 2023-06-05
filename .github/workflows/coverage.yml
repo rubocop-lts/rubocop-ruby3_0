@@ -40,7 +40,7 @@ jobs:
         gemfile:
           - coverage
         ruby:
-          - "2.7"
+          - "3.0"
 
     runs-on: ubuntu-latest
     steps:

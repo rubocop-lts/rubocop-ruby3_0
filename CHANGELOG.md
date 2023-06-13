@@ -139,7 +139,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * Initial release
 
-[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.5...HEAD
+[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.6...HEAD
+[2.0.6]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.5...v2.0.6
 [2.0.5]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.4...v2.0.5
 [2.0.4]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.3...v2.0.4
 [2.0.3]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.2...v2.0.3

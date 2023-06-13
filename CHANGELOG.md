@@ -10,6 +10,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
+## [2.0.6] 2023-06-13
+### Changed
+- Moved development dependencies out of gemspec
+- rubocop to 1.52.1
+- rubocop-shopify to 2.14
+- standard-custom to 1.0.1
+- standard-rubocop-lts to 1.0.7
+- version_gem to 1.1.3
+### Fixed
+- rubocop/rails.yml config
+  - betterlint integration
+  - standard-rails integration
+- bin/pry now pre-loads this library
+
 ## [2.0.5] 2023-06-05
 ### Added
 - Dependencies

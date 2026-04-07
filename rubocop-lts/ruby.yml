@@ -14,7 +14,6 @@ require:
   # In light of that, we are well past having convened on Markdown for README docs and such.
   - rubocop-md
   # Rubygems have Rakefile as a convention, and if they don't, why not?
-  - rubocop-rake
   # In the vast majority of cases, we will want to be warned about thread unsafe code.
   # In those cases where we intentionally have thread unsafe code,
   #   a rubocop:disable is the least of our concerns. :D
@@ -38,6 +37,10 @@ AllCops:
 # Metrics cops are disabled in Standard by default
 Metrics:
   Enabled: true
+
+plugins:
+  # Rubygems have Rakefile as a convention, and if they don't, why not?
+  - rubocop-rake
 
 # Ruby specific customizations
 Layout/LineLength:

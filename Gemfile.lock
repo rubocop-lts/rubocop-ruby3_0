@@ -6,30 +6,8 @@ PATH
       rubocop-md (~> 1.2, >= 1.2.1)
       rubocop-rake (~> 0.6)
       rubocop-thread_safety (~> 0.5, >= 0.5.1)
-      standard-rubocop-lts (~> 2.0, >= 2.0.0)
-      version_gem (>= 1.1.3, < 3)
-
-PATH
-  remote: /home/pboling/code/src/rubocop-lts/rubocop-lts-rspec
-  specs:
-    rubocop-lts-rspec (1.0.0)
-      rubocop (~> 1.72, >= 1.72.1)
-      rubocop-env (~> 0.1, >= 0.1.0)
-      rubocop-factory_bot (~> 2.27, >= 2.27.1)
-      rubocop-rspec (~> 3.6, >= 3.6.0)
-      rubocop-rspec-extra (~> 0.2, >= 0.2.0)
-      standard (>= 1.38, < 2)
-      standard-rspec (~> 0.3, >= 0.3.1)
-      version_gem (>= 1.1.8, < 3)
-
-PATH
-  remote: /home/pboling/code/src/rubocop-lts/standard-rubocop-lts
-  specs:
-    standard-rubocop-lts (2.0.1)
-      standard (>= 1.35.1, < 2)
-      standard-custom (>= 1.0.2, < 2)
-      standard-performance (>= 1.3.1, < 2)
-      version_gem (>= 1.1.8, < 3)
+      standard-rubocop-lts (~> 2.0, >= 2.0.2)
+      version_gem (>= 1.1.9, < 3)
 
 GEM
   remote: https://rubygems.org/
@@ -43,8 +21,8 @@ GEM
     diffy (3.4.4)
     docile (1.4.1)
     io-console (0.8.2)
-    json (2.19.5)
-    kettle-soup-cover (1.1.1)
+    json (2.19.7)
+    kettle-soup-cover (1.1.3)
       simplecov (~> 0.22)
       simplecov-cobertura (~> 3.0)
       simplecov-console (~> 0.9, >= 0.9.3)
@@ -57,7 +35,7 @@ GEM
       rexml (>= 3.4.4)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
-    nomono (1.0.0)
+    nomono (1.0.1)
       version_gem (~> 1.1, >= 1.1.9)
     ostruct (0.6.3)
     parallel (1.28.0)
@@ -117,6 +95,15 @@ GEM
       parallel (~> 1.10)
       rainbow (>= 2.2.2, < 4.0)
       rubocop (~> 1.0)
+    rubocop-lts-rspec (1.0.1)
+      rubocop (~> 1.72, >= 1.72.1)
+      rubocop-env (~> 0.1, >= 0.1.0)
+      rubocop-factory_bot (~> 2.27, >= 2.27.1)
+      rubocop-rspec (~> 3.6, >= 3.6.0)
+      rubocop-rspec-extra (~> 0.2, >= 0.2.0)
+      standard (>= 1.38, < 2)
+      standard-rspec (~> 0.3, >= 0.3.1)
+      version_gem (>= 1.1.9, < 3)
     rubocop-md (1.2.4)
       rubocop (>= 1.45)
     rubocop-packaging (0.6.0)
@@ -172,19 +159,24 @@ GEM
     standard-performance (1.9.0)
       lint_roller (~> 1.1)
       rubocop-performance (~> 1.26.0)
-    standard-rspec (0.4.0)
+    standard-rspec (0.5.0)
       lint_roller (>= 1.0)
-      rubocop-capybara (~> 2.22)
+      rubocop-capybara (~> 2.23)
       rubocop-factory_bot (~> 2.27)
       rubocop-rspec (~> 3.9)
       rubocop-rspec_rails (~> 2.31)
+    standard-rubocop-lts (2.0.2)
+      standard (>= 1.35.1, < 2)
+      standard-custom (>= 1.0.2, < 2)
+      standard-performance (>= 1.3.1, < 2)
+      version_gem (>= 1.1.9, < 3)
     terminal-table (4.0.0)
       unicode-display_width (>= 1.1.1, < 4)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.2.0)
     version_gem (1.1.9)
-    yard (0.9.43)
+    yard (0.9.44)
     yard-junk (0.1.0)
       benchmark
       ostruct
@@ -198,20 +190,19 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  kettle-soup-cover (~> 1.0, >= 1.0.2)
+  kettle-soup-cover (~> 1.1, >= 1.1.3)
   kramdown (~> 2.4)
   nomono (~> 1.0)
   rake (~> 13.1)
   rspec (~> 3.12)
   rspec-block_is_expected (~> 1.0, >= 1.0.5)
-  rspec-stubbed_env (~> 1.0, >= 1.0.1)
+  rspec-stubbed_env (~> 1.0, >= 1.0.4)
   rspec_junit_formatter (~> 0.6)
-  rubocop-lts-rspec (~> 1.0)!
+  rubocop-lts-rspec (~> 1.0, >= 1.0.1)
   rubocop-packaging (~> 0.5, >= 0.5.2)
   rubocop-ruby3_0!
-  standard-rubocop-lts!
   yard (~> 0.9, >= 0.9.34)
   yard-junk (~> 0.1, >= 0.1.0)
 
 BUNDLED WITH
-   2.6.8
+   4.0.12

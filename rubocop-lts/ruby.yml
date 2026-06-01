@@ -13,11 +13,6 @@ require:
   # The goal here is convention over configuration...
   # In light of that, we are well past having convened on Markdown for README docs and such.
   - rubocop-md
-  # Rubygems have Rakefile as a convention, and if they don't, why not?
-  # In the vast majority of cases, we will want to be warned about thread unsafe code.
-  # In those cases where we intentionally have thread unsafe code,
-  #   a rubocop:disable is the least of our concerns. :D
-  - rubocop-thread_safety
   # RuboCop Gradual can be used in "Require mode", which is a way to replace rubocop with rubocop-gradual:
   - rubocop/gradual/patch
 
@@ -41,6 +36,8 @@ Metrics:
 plugins:
   # Rubygems have Rakefile as a convention, and if they don't, why not?
   - rubocop-rake
+  # Warn about thread unsafe code in the broad LTS Ruby profile.
+  - rubocop-thread_safety
 
 # Ruby specific customizations
 Layout/LineLength:

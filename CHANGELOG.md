@@ -20,11 +20,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
-- Added support for JRuby 10.1 and TruffleRuby 34.0.
-
 ### Changed
-
-- Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
 
 ### Deprecated
 
@@ -32,14 +28,34 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+### Security
+
+## [3.0.4] - 2026-06-25
+
+- TAG: [v3.0.4][3.0.4t]
+- COVERAGE: 55.17% -- 16/29 lines in 5 files
+- BRANCH COVERAGE: 0.00% -- 0/2 branches in 5 files
+- 42.86% documented
+
+### Added
+
+- Added support for JRuby 10.1 and TruffleRuby 34.0.
+
+### Changed
+
+- Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
+
+### Fixed
+
 - Restored `docs/CNAME` so the generated documentation site keeps its custom domain.
 - Corrected misspelled contact metadata to use `galtzo.com`.
 
-### Security
-
 ## [3.0.2] 2026-06-01
+
 ### Added
+
 ### Changed
+
 - Corrected gem metadata to declare the Ruby 3.2 runtime floor that has been implicit since the last major release.
 - Updated dependency floors:
   - `version_gem` to `~> 1.1`, `>= 1.1.9`.
@@ -50,42 +66,61 @@ Please file a bug if you notice a violation of semantic versioning.
   - `standard-rubocop-lts` to `~> 2.0`, `>= 2.0.3`.
   - Release, lint, documentation, and test dependencies to their latest compatible floors.
 - Updated direct dependency floors and moved `rubocop-md` to plugin loading.
+
 ### Fixed
+
 ### Removed
 
 ## [3.0.1] 2026-06-01
+
 ### Added
+
 ### Changed
+
 - Load `rubocop-thread_safety` through RuboCop's plugin API.
+
 ### Fixed
+
 ### Removed
 
 ## [3.0.0] 2026-05-30
+
 ### Added
+
 ### Changed
+
 - Tidelift for Reporting Security vulnerabilities
 - Updated `standard-rubocop-lts` dependency to the `2.x` series.
+
 ### Fixed
+
 ### Removed
+
 - rubocop-shopify because they boiled the ocean
   - turning cops off isn't copacetic with the goal of strict compatibility
 
 ## [2.0.6] 2023-06-13
+
 ### Changed
+
 - Moved development dependencies out of gemspec
 - rubocop to 1.52.1
 - rubocop-shopify to 2.14
 - standard-custom to 1.0.1
 - standard-rubocop-lts to 1.0.7
 - version_gem to 1.1.3
+
 ### Fixed
+
 - rubocop/rails.yml config
   - betterlint integration
   - standard-rails integration
 - bin/pry now pre-loads this library
 
 ## [2.0.5] 2023-06-05
+
 ### Added
+
 - Dependencies
   - yard-junk
   - redcarpet
@@ -95,24 +130,36 @@ Please file a bug if you notice a violation of semantic versioning.
 - Some rules should ignore specs/tests
   - Style/MethodCallWithArgsParentheses
   - Style/ClassAndModuleChildren
+
 ### Fixed
+
 - `yard` documentation task
+
 ### Changed
+
 - Added Include to inherit_mode: merge
 - Updated dependency on standard-rubocop-lts
 
 ## [2.0.4] 2023-05-22
+
 ### Fixed
+
 - install_tasks and Railtie loading of rake tasks
+
 ### Changed
+
 - tasks.rake => tasks.rb
 
 ## [2.0.3] 2023-05-21
+
 ### Fixed
+
 - Ship rake tasks in gem package
 
 ## [2.0.2] 2023-05-19
+
 ### Added
+
 - Configs added for:
   - standard-performance
   - standard-custom
@@ -121,11 +168,15 @@ Please file a bug if you notice a violation of semantic versioning.
   - betterlint
   - standard-rails
 - version_gem
+
 ### Fixed
+
 - Fix rake_tasks hook on Railtie
 
 ## [2.0.0] 2023-05-09 [YANKED]
+
 ### Changed
+
 - New/Better configs for:
   - rubocop
   - rubocop-gradual
@@ -141,65 +192,98 @@ Please file a bug if you notice a violation of semantic versioning.
   - rubocop-packaging
 
 ## [1.1.2] 2023-03-17
+
 ### Added
+
 * GitLab CI config
+
 ### Changed
+
 * Upgraded to RuboCop v1.48.1
   * Compatible with rubocop-packaging ~> 0.5.2
 * Improved development documentation
 * Improved documentation on SemVer adherence
+
 ### Fixed
+
 * Stop defining global variable in version.rb
 
 ## [1.1.1] 2022-12-20
+
 ### Fixed
+
 * Do not require version.rb from gemspec so code coverage is accurate from both `rake` and `rspec`
 * Typos in CHANGELOG & Documentation
+
 ### Changed
+
 * Minimum Code Coverage == 100%
 
 ## [1.1.0] 2022-12-18
+
 ### Changed
+
 * Update to rubocop `~> 1.40.0`
+
 ### Added
+
 * Gem release ships with `SHA512` and `SHA256` checksums
 * Release is securely signed by author
 * Document release process in `CONTRIBUTING.md`
 * Documentation of why this gem exists
 
 ## [1.0.6] 2022-06-08
+
 ### Changed
+
 * Update to rubocop `~> 1.30.1`
 * Removed test_files from gemspec
 * Add binstubs for bundle, rake, rspec, and rubocop
 
 ## [1.0.5] 2022-06-05
+
 ### Changed
+
 * Update to rubocop `~> 1.30.0`
 
 ## [1.0.4] 2022-05-23
+
 ### Changed
+
 * Update to rubocop `~> 1.29.1`
 
 ## [1.0.3] 2022-05-23
+
 ### Added
+
 * Rubocop => RuboCop typo repair
 * Ruby Version Support Matrix
 * Improved documentation
 
 ## [1.0.2] 2022-05-03
+
 ### Fixed
+
 * Added missing rubocop.yml for inherit_gem directive
 
 ## [1.0.1] 2022-05-02
+
 ### Added
+
 * Documentation
 
 ## [1.0.0] 2022-05-01
+
 ### Added
+
 * Initial release
 
-[Unreleased]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/compare/v3.0.2...HEAD
+[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v3.0.4...HEAD
+[3.0.4]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v3.0.2...v3.0.4
+[3.0.4t]: https://github.com/rubocop-lts/rubocop-ruby3_0/releases/tag/v3.0.4
+[3.0.2]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/compare/v3.0.1...v3.0.2
+[3.0.1]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/compare/v3.0.0...v3.0.1
+[3.0.0]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/compare/v2.0.6...v3.0.0
 [2.0.6]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.5...v2.0.6
 [2.0.5]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.4...v2.0.5
 [2.0.4]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v2.0.3...v2.0.4
@@ -216,6 +300,3 @@ Please file a bug if you notice a violation of semantic versioning.
 [1.0.2]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/251b24f1147b3a42a16465663be1f08c93e8affc...v1.0.0
-[3.0.1]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/compare/v3.0.0...v3.0.1
-[3.0.0]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/compare/v2.0.6...v3.0.0
-[3.0.2]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/compare/v3.0.1...v3.0.2

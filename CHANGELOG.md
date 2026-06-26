@@ -28,6 +28,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Restored the gemspec `spec.files` declaration so packaged gems include the
+  intended public files and configuration payload.
+
 ### Security
 
 ## [3.0.4] - 2026-06-25

@@ -8,7 +8,7 @@ GIT
 PATH
   remote: .
   specs:
-    rubocop-ruby3_0 (3.0.4)
+    rubocop-ruby3_0 (3.0.5)
       rubocop-gradual (~> 0.3, >= 0.3.6)
       rubocop-md (~> 2.0, >= 2.0.4)
       rubocop-rake (~> 0.7, >= 0.7.1)
@@ -19,7 +19,7 @@ PATH
 PATH
   remote: /home/pboling/src/my/rubocop-lts/rubocop-lts
   specs:
-    rubocop-lts (4.3.1)
+    rubocop-lts (4.3.2)
       rubocop-ruby3_2 (~> 3.0, >= 3.0.1)
       standard-rubocop-lts (~> 2.0, >= 2.0.3)
       version_gem (~> 1.1, >= 1.1.13)
@@ -27,7 +27,7 @@ PATH
 PATH
   remote: /home/pboling/src/my/rubocop-lts/rubocop-ruby3_2
   specs:
-    rubocop-ruby3_2 (3.0.5)
+    rubocop-ruby3_2 (3.0.6)
       rubocop-gradual (~> 0.3, >= 0.3.6)
       rubocop-md (~> 2.0, >= 2.0.4)
       rubocop-rake (~> 0.7, >= 0.7.1)
@@ -38,7 +38,7 @@ PATH
 PATH
   remote: /var/home/pboling/src/my/rubocop-lts/standard-rubocop-lts
   specs:
-    standard-rubocop-lts (2.0.7)
+    standard-rubocop-lts (2.0.8)
       standard (~> 1.54, >= 1.54.0)
       standard-custom (~> 1.0, >= 1.0.2)
       standard-performance (~> 1.9, >= 1.9.0)
@@ -123,9 +123,11 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.20.0)
-    kettle-dev (2.2.19)
+    kettle-dev (2.2.20)
+      kettle-rb (~> 0.1, >= 0.1.0)
       kettle-test (~> 2.0, >= 2.0.4)
       version_gem (~> 1.1, >= 1.1.13)
+    kettle-rb (0.1.0)
     kettle-soup-cover (3.0.0.rc5)
       simplecov (>= 1.0.pre)
       simplecov-cobertura (>= 4.0.pre)
@@ -395,7 +397,7 @@ DEPENDENCIES
   gem_bench (~> 2.0, >= 2.0.5)
   gitmoji-regex (~> 2.0, >= 2.0.3)
   irb (~> 1.17)
-  kettle-dev (~> 2.2, >= 2.2.19)
+  kettle-dev (~> 2.2, >= 2.2.20)
   kettle-soup-cover (~> 3.0.a, >= 3.0.0.rc5)
   kettle-test (~> 2.0, >= 2.0.8)
   kramdown (~> 2.5, >= 2.5.2, >= 2.5.1)

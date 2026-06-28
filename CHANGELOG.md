@@ -28,10 +28,19 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+### Security
+
+## [3.0.5] - 2026-06-28
+
+- TAG: [v3.0.5][3.0.5t]
+- COVERAGE: 55.17% -- 16/29 lines in 5 files
+- BRANCH COVERAGE: 0.00% -- 0/2 branches in 5 files
+- 42.86% documented
+
+### Fixed
+
 - Restored the gemspec `spec.files` declaration so packaged gems include the
   intended public files and configuration payload.
-
-### Security
 
 ## [3.0.4] - 2026-06-25
 
@@ -281,7 +290,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 * Initial release
 
-[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v3.0.4...HEAD
+[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v3.0.5...HEAD
+[3.0.5]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v3.0.4...v3.0.5
+[3.0.5t]: https://github.com/rubocop-lts/rubocop-ruby3_0/releases/tag/v3.0.5
 [3.0.4]: https://github.com/rubocop-lts/rubocop-ruby3_0/compare/v3.0.2...v3.0.4
 [3.0.4t]: https://github.com/rubocop-lts/rubocop-ruby3_0/releases/tag/v3.0.4
 [3.0.2]: https://gitlab.com/rubocop-lts/rubocop-ruby3_0/-/compare/v3.0.1...v3.0.2

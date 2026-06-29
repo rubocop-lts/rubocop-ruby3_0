@@ -28,6 +28,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Refreshed `Gemfile.lock` to use the released `rubocop-lts-rspec` 1.0.4 dependency.
 ### Security
 
 ## [3.0.5] - 2026-06-28

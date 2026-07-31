@@ -1,5 +1,9 @@
 {
-  "rubocop-ruby3_0.gemspec:4008445300": [
+  "rubocop-ruby3_0.gemspec:3252970847": [
     [19, 32, 10, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (3.0, which may be specified in .rubocop.yml) should be equal.", 4072499287]
+  ],
+  "spec/rubocop/ruby3_0/version_spec.rb:3768916456": [
+    [4, 1, 39, "RSpec/SpecFilePathFormat: Spec path should end with `rubocop/ruby30/version*_spec.rb`.", 4196302306],
+    [7, 3, 452, "RSpec/ExampleLength: Example has too many lines. [6/5]", 1336704189]
   ]
 }

@@ -104,6 +104,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Exclude optional integration hooks from default coverage scope.
 
+- Repair README Standard Ruby references and advanced-usage navigation.
+
 ### Security
 
 ## [3.0.6] - 2026-07-03
